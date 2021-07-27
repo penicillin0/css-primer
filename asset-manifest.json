@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/css-primer/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/css-primer/static/js/main.6ba0614f.chunk.js",
+    "main.js.map": "/css-primer/static/js/main.6ba0614f.chunk.js.map",
+    "runtime-main.js": "/css-primer/static/js/runtime-main.4160fda1.js",
+    "runtime-main.js.map": "/css-primer/static/js/runtime-main.4160fda1.js.map",
+    "static/js/2.d08b203b.chunk.js": "/css-primer/static/js/2.d08b203b.chunk.js",
+    "static/js/2.d08b203b.chunk.js.map": "/css-primer/static/js/2.d08b203b.chunk.js.map",
+    "static/js/3.65eb003e.chunk.js": "/css-primer/static/js/3.65eb003e.chunk.js",
+    "static/js/3.65eb003e.chunk.js.map": "/css-primer/static/js/3.65eb003e.chunk.js.map",
+    "index.html": "/css-primer/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/css-primer/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.d08b203b.chunk.js.LICENSE.txt": "/css-primer/static/js/2.d08b203b.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/css-primer/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4160fda1.js",
+    "static/js/2.d08b203b.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.6ba0614f.chunk.js"
+  ]
+}
