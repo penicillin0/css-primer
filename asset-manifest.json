@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/css-primer/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/css-primer/static/js/main.5f8efc35.chunk.js",
-    "main.js.map": "/css-primer/static/js/main.5f8efc35.chunk.js.map",
+    "main.js": "/css-primer/static/js/main.6c7a90da.chunk.js",
+    "main.js.map": "/css-primer/static/js/main.6c7a90da.chunk.js.map",
     "runtime-main.js": "/css-primer/static/js/runtime-main.58a829a6.js",
     "runtime-main.js.map": "/css-primer/static/js/runtime-main.58a829a6.js.map",
     "static/js/2.d7f892fa.chunk.js": "/css-primer/static/js/2.d7f892fa.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.58a829a6.js",
     "static/js/2.d7f892fa.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.5f8efc35.chunk.js"
+    "static/js/main.6c7a90da.chunk.js"
   ]
 }
