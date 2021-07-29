@@ -1,10 +1,14 @@
 import React from "react";
 import { Nav, Navbar, NavbarBrand, NavItem, NavLink } from "reactstrap";
 
-export const NavgationBar = () => {
+type Props = { routingBase: string };
+
+export const NavgationBar: React.FC<Props> = (props) => {
+  const homeLink = props.routingBase === "/" ? "/" : props.routingBase + "/";
+
   return (
     <Navbar style={{ backgroundColor: "#333" }} expand="lg">
-      <NavbarBrand href="/" className="mx-3 text-white">
+      <NavbarBrand href={homeLink} className="mx-3 text-white">
         CSS Primer
       </NavbarBrand>
 

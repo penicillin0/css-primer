@@ -10,7 +10,7 @@ export function App() {
 
   return (
     <Router basename={ROUTER_BASENAME}>
-      <NavgationBar />
+      <NavgationBar routingBase={ROUTER_BASENAME} />
       <Container className="mt-4">
         <RootingPage />
       </Container>
