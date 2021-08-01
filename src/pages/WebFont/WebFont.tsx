@@ -10,7 +10,7 @@ export const WebFont: React.FC<Props> = () => {
     <div>
       <h1 className="my-3">WebFont</h1>
       <p className="mb-5">ここではWebフォントを使って文字を表示します。</p>
-      <h3>
+      <h3 className="mb-3">
         <b>Web フォントを定義する</b>
       </h3>
       <h4>@font-face</h4>
@@ -24,7 +24,7 @@ export const WebFont: React.FC<Props> = () => {
       </SyntaxHighlighter>
       <Demo>
         <h5>This is Basic Font</h5>
-        <H5ChunkFive>This is ChunkFive Font</H5ChunkFive>
+        <H5Font fontFamily="ChunkFive">This is ChunkFive Font</H5Font>
       </Demo>
       <p>
         複数のフォントフェイスを定義することも可能です。例えば斜体のフォントを定義してみましょう。
@@ -53,10 +53,10 @@ export const WebFont: React.FC<Props> = () => {
 </h5>`}
       </SyntaxHighlighter>
       <Demo>
-        <H5GentiumBasic>This is Gentium Basic</H5GentiumBasic>
-        <H5GentiumBasic>
+        <H5Font fontFamily="Gentium Basic">This is Gentium Basic</H5Font>
+        <H5Font fontFamily="Gentium Basic">
           <em>This is Gentium Basic Italic</em>
-        </H5GentiumBasic>
+        </H5Font>
       </Demo>
       <p>
         Webフォントを使う場合、全てのフォントフェイスについてフォントファイルを用意し、定義する必要があります。
@@ -64,16 +64,17 @@ export const WebFont: React.FC<Props> = () => {
       <p>
         フォントファイルを用意せずにフォントフェイスを適用しようとすると、ブラウザが自動で用意したスタイルになるため注意が必要です。
       </p>
+      <h3 className="mt-5">
+        <b>その他の機能</b>
+      </h3>
+      <h4>font-stretch</h4>
+      <p>一部の</p>
     </div>
   );
 };
 
-const H5ChunkFive = styled.h5`
-  font-family: ChunkFive;
-`;
-
-const H5GentiumBasic = styled.h5`
-  font-family: "Gentium Basic";
+const H5Font = styled.h5<{ fontFamily: string }>`
+  font-family: ${(props) => props.fontFamily}, sans-serif;
 `;
 
 const Demo = styled.div`
