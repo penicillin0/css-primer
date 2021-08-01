@@ -27,3 +27,28 @@ code {
   font-style: italic;
   src: url(./fonts/GentiumBasic-Italic.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "EncodeSans Condensed";
+  src: url(./fonts/EncodeSans_Condensed-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "EncodeSans SemiCondensed";
+  src: url(./fonts/EncodeSans_SemiCondensed-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "EncodeSans";
+  src: url(./fonts/EncodeSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "EncodeSans SemiExpanded";
+  src: url(./fonts/EncodeSans_SemiExpanded-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "EncodeSans Expanded";
+  src: url(./fonts/EncodeSans_Expanded-Regular.ttf) format("truetype");
+}

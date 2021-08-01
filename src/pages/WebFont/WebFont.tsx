@@ -64,11 +64,44 @@ export const WebFont: React.FC<Props> = () => {
       <p>
         フォントファイルを用意せずにフォントフェイスを適用しようとすると、ブラウザが自動で用意したスタイルになるため注意が必要です。
       </p>
-      <h3 className="mt-5">
+      <h3 className="mt-5 mb-3">
         <b>その他の機能</b>
       </h3>
       <h4>font-stretch</h4>
-      <p>一部の</p>
+      <p>
+        一部のフォントファミリーでは文字の幅を縮めることができます。幅の狭い順に、以下のようなキーワード値を持ちます。
+      </p>
+      <SyntaxHighlighter language="css" style={monokai} className="mb-3">
+        {`font-stretch: ultra-condensed;
+font-stretch: extra-condensed;
+font-stretch: condensed;
+font-stretch: semi-condensed;
+font-stretch: normal;
+font-stretch: semi-expanded;
+font-stretch: expanded;
+font-stretch: extra-expanded;
+font-stretch: ultra-expanded;`}
+      </SyntaxHighlighter>
+      <p>
+        ブラウザによって使用方法が若干異なるため注意が必要です。今回はChromeを想定して、@font-face
+        に追加してみます。各ブラウザの対応状況は
+        <a href="https://developer.mozilla.org/ja/docs/Web/CSS/font-stretch#browser_compatibility">
+          こちら
+        </a>
+        で参照できます。
+      </p>
+      <p>
+        上から、condensed, semi-condensed, normal, semi-expanded, expandedの順。
+      </p>
+      <Demo>
+        <H5Font fontFamily="EncodeSans Condensed">This is EncodeSans</H5Font>
+        <H5Font fontFamily="EncodeSans SemiCondensed">
+          This is EncodeSans
+        </H5Font>
+        <H5Font fontFamily="EncodeSans">This is EncodeSans</H5Font>
+        <H5Font fontFamily="EncodeSans SemiExpanded">This is EncodeSans</H5Font>
+        <H5Font fontFamily="EncodeSans Expanded">This is EncodeSans</H5Font>
+      </Demo>
     </div>
   );
 };
