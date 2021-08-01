@@ -11,7 +11,7 @@ export function App() {
   return (
     <Router basename={ROUTER_BASENAME}>
       <NavgationBar routingBase={ROUTER_BASENAME} />
-      <Container className="mt-4">
+      <Container className="my-5" style={{ maxWidth: "960px" }}>
         <RootingPage />
       </Container>
     </Router>
