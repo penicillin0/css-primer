@@ -15,7 +15,6 @@ export const WebFont: React.FC<Props> = () => {
       </h3>
       <h4>@font-face</h4>
       <p>@font-faceというルール使ってフォントを定義することができます。</p>
-
       <SyntaxHighlighter language="css" style={monokai} className="mb-3">
         {`@font-face {
   font-family: "ChunkFive";
@@ -60,8 +59,6 @@ export const WebFont: React.FC<Props> = () => {
       </Demo>
       <p>
         Webフォントを使う場合、全てのフォントフェイスについてフォントファイルを用意し、定義する必要があります。
-      </p>
-      <p>
         フォントファイルを用意せずにフォントフェイスを適用しようとすると、ブラウザが自動で用意したスタイルになるため注意が必要です。
       </p>
       <h3 className="mt-5 mb-3">
@@ -102,16 +99,53 @@ font-stretch: ultra-expanded;`}
         <H5Font fontFamily="EncodeSans SemiExpanded">This is EncodeSans</H5Font>
         <H5Font fontFamily="EncodeSans Expanded">This is EncodeSans</H5Font>
       </Demo>
+      <h4>font-feature-setting</h4>
+      <p>
+        TrueType形式のフォントは歴史が古く、拡大縮小しても輪郭がガタガタしないスケーラブルなフォントとして普及しました。
+        そのTrueTypeを拡張したものがOpenTypeです。リガチャー(合次)、スウォッチ、特殊な数字など様々な指定が可能です。
+        font-feature-settingというプロパティは、OpenTypeの機能を使うためのものです。
+      </p>
+      <SyntaxHighlighter language="css" style={monokai} className="mb-3">
+        {`font-feature-settings: "smcp";`}
+      </SyntaxHighlighter>
+      <Demo>
+        <H5FiraSansSmallCaps>This is Fira-sans</H5FiraSansSmallCaps>
+      </Demo>
+      <SyntaxHighlighter language="css" style={monokai} className="mb-3">
+        {`font-feature-settings: "trad";`}
+      </SyntaxHighlighter>
+      <Demo>
+        <H5OldFont>旧字体</H5OldFont>(旧字体)
+      </Demo>
+      font-feature-settingの機能は
+      <a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-variant">
+        font-variant
+      </a>
+      でも利用できることがあります。
+      font-variantでサポートされているなら極力そちらを使用することが推奨されています。
+      <a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-feature-settings">
+        (参考)
+      </a>
     </div>
   );
 };
+
+const Demo = styled.div`
+  background-color: lightyellow;
+  padding: 20px 0px 20px 40px;
+  margin-bottom: 50px;
+`;
 
 const H5Font = styled.h5<{ fontFamily: string }>`
   font-family: ${(props) => props.fontFamily}, sans-serif;
 `;
 
-const Demo = styled.div`
-  background-color: lightyellow;
-  padding: 20px 0px 20px 40px;
-  margin-bottom: 60px;
+const H5FiraSansSmallCaps = styled.h5`
+  font-family: "FiraSansR";
+  font-feature-settings: "smcp";
+`;
+
+const H5OldFont = styled.h5`
+  font-family: "FiraSansR";
+  font-feature-settings: "trad";
 `;

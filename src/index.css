@@ -52,3 +52,8 @@ code {
   font-family: "EncodeSans Expanded";
   src: url(./fonts/EncodeSans_Expanded-Regular.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "FiraSansR";
+  src: url(./fonts/FiraSansR.otf) format("opentype");
+}

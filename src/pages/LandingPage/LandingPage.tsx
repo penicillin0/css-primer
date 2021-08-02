@@ -15,11 +15,12 @@ span:after {
 export const LandingPage: React.FC<Props> = () => {
   return (
     <div>
-      <h1 className="my-4">Welcome to CSS primer</h1>
+      <h1 className="my-4">Welcome to CSS3 primer</h1>
       <SyntaxHighlighter language="css" style={monokai}>
         {cssCode}
       </SyntaxHighlighter>
       <div className="mx-4">
+        CSS3を学ぶためのページです。
         <h2>Pages</h2>
         <li>
           <Link to="/webfont">Web font</Link>
