@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { monokai } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { Demo } from "../../components/Demo";
 
 type Props = {};
 
@@ -129,12 +130,6 @@ font-stretch: ultra-expanded;`}
     </div>
   );
 };
-
-const Demo = styled.div`
-  background-color: lightyellow;
-  padding: 20px 0px 20px 40px;
-  margin-bottom: 50px;
-`;
 
 const H5Font = styled.h5<{ fontFamily: string }>`
   font-family: ${(props) => props.fontFamily}, sans-serif;
