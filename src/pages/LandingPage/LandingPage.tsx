@@ -21,9 +21,12 @@ export const LandingPage: React.FC<Props> = () => {
       </SyntaxHighlighter>
       <div className="mx-4">
         CSS3を学ぶためのページです。
-        <h2>Pages</h2>
+        <h2 className="mt-4 mb-3">Pages</h2>
         <li>
           <Link to="/webfont">Web font</Link>
+        </li>
+        <li>
+          <Link to="/text">Text</Link>
         </li>
       </div>
     </div>
