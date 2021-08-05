@@ -23,7 +23,7 @@ export const LandingPage: React.FC<Props> = () => {
         CSS3を学ぶためのページです。
         <h2 className="mt-4 mb-3">Pages</h2>
         <li>
-          <Link to="/webfont">Web font</Link>
+          <Link to="/webfont">Web Font</Link>
         </li>
         <li>
           <Link to="/text">Text</Link>
