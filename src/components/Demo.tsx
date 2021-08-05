@@ -9,6 +9,6 @@ export const Demo: React.FC<Props> = (props) => {
 
 const DemoSpace = styled.div`
   background-color: lightyellow;
-  padding: 20px 0px 20px 40px;
+  padding: 20px 40px 20px 40px;
   margin-bottom: 50px;
 `;
