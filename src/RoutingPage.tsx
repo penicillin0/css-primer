@@ -4,6 +4,7 @@ import { About } from "./pages/About/About";
 import { LandingPage } from "./pages/LandingPage/LandingPage";
 import { WebFont } from "./pages/WebFont/WebFont";
 import { Text } from "./pages/Text/Text";
+import { Columns } from "./pages/Columns/Columns";
 
 export const RootingPage = () => {
   return (
@@ -12,6 +13,7 @@ export const RootingPage = () => {
       <Route exact path="/webfont" component={WebFont} />
       <Route exact path="/about" component={About} />
       <Route exact path="/text" component={Text} />
+      <Route exact path="/columns" component={Columns} />
     </Switch>
   );
 };
