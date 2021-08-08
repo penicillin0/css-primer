@@ -87,7 +87,7 @@ div {
   hyphens: auto;
 }`}
       </SyntaxHighlighter>
-      <html lang="en">
+      <div lang="en">
         <Demo>
           <DivColumnGapRule columnNum={3} columnsGap={3}>
             Thank You. I am honored to be with you today for your commencement
@@ -106,7 +106,7 @@ div {
             by a lawyer and his wife.
           </DivColumnGapRule>
         </Demo>
-      </html>
+      </div>
       <h4>column-span</h4>
       <p>
         見出しなどのために特定の要素だけを段組みしないで表示することができます。
@@ -116,7 +116,7 @@ div {
   column-span: all;
 }`}
       </SyntaxHighlighter>
-      <html lang="en">
+      <div lang="en">
         <Demo>
           <DivColumnGapRule columnNum={2} columnsGap={3}>
             <H5ColumnSpan>
@@ -143,7 +143,7 @@ div {
             by a lawyer and his wife.
           </DivColumnGapRule>
         </Demo>
-      </html>
+      </div>
     </>
   );
 };
@@ -172,7 +172,7 @@ const DivColumnGapRule = styled.div<{ columnsGap: number; columnNum: number }>`
   margin: auto;
 `;
 
-const H5ColumnSpan = styled.p`
+const H5ColumnSpan = styled.div`
   column-span: all;
   font-size: 20px;
   margin: auto;

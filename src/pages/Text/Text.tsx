@@ -143,7 +143,7 @@ p {
   hyphens: none;
 }`}
       </SyntaxHighlighter>
-      <html lang="en">
+      <div lang="en">
         <Demo>
           <PHyphensAuto style={{ width: "180px", border: "1px solid #888" }}>
             The word "floccinaucinihilipilification" means "the estimation of
@@ -156,7 +156,8 @@ p {
             four Latin prefixes meaning "nothing".
           </PHyphensNone>
         </Demo>
-      </html>
+      </div>
+
       <h4>resize</h4>
       <p>
         このプロパティは、要素の大きさを変更することができます。値によって伸縮の方向を制限することができます。
