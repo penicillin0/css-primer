@@ -27,7 +27,7 @@ export const LandingPage: React.FC<Props> = () => {
         </li>
         <li>
           <Link to="/text">Text</Link>
-        </li>{" "}
+        </li>
         <li>
           <Link to="/columns">Columns</Link>
         </li>
