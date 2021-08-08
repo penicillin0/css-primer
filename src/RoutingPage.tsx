@@ -15,8 +15,6 @@ export const RootingPage = () => {
   React.useEffect(() => {
     const scrollHeight = document.documentElement.scrollHeight;
     const clientHeight = document.documentElement.clientHeight;
-    console.log(location);
-    console.log(scrollHeight, clientHeight);
     if (scrollHeight > clientHeight) {
       setCanScroll(true);
     } else {
